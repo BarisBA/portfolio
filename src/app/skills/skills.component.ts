@@ -20,9 +20,9 @@ export class SkillsComponent implements OnInit {
   currentImage = 0;
 
   ngOnInit(): void {
-    //this.allImages();
+    this.allImages();
   }
-/*
+
     allImages() {
       for (let i = 0; i < this.skills.length; i++) {
         document.getElementById('skillSection').innerHTML += this.templateSkills(i);
@@ -43,5 +43,5 @@ export class SkillsComponent implements OnInit {
         </div>
       </div>
       `;
-    }*/
+    }
 }
