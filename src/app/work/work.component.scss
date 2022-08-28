@@ -1,0 +1,38 @@
+.workTitle {
+    color: white;
+
+    h1 {
+        text-align: center;
+    }
+
+    .laguages {
+        display: flex;
+        justify-content: center;
+
+        .laguages-child {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 100px;
+            
+            &:hover {
+                background-color: rgb(250, 39, 89);
+                cursor: pointer;
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    
+    img {
+        object-fit: cover;
+        width: 460px;
+        height: 300px;
+    }
+}
