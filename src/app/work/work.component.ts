@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkComponent implements OnInit {
   languages = ['All','Angular', 'Javascript'];
-  screenshots = ['startscreen_1.png','Join.png',];
+  screenshots = ['startscreen_1.png','Join.png','startscreen_1.png','Join.png'];
   constructor() { }
 
   ngOnInit(): void {

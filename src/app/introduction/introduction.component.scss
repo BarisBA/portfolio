@@ -1,12 +1,22 @@
 .introduction {
     color: white;
-    padding-top: 50px;
-    padding-bottom: 25px;
     display: flex;
     justify-content: space-between;
 
-    p {
-        font-size: 70px;
+        p {
+            font-size: 70px;
+        }
+
+    .introductionImg {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
     }
 }
 

@@ -1,4 +1,4 @@
-<div class="bg1">
+<div class="bg1 padding">
     <div class="workTitle">
         <h1>MY work</h1>
         <div class="laguages">
@@ -7,9 +7,11 @@
             </div>           
         </div>
     </div>
-    <div *ngFor="let screenshot of screenshots; let i = index">
-        <div class="screenshots">
-            <img src="./../../assets/img/{{screenshots[i]}}">
+    <div class="screenshots-header">
+        <div *ngFor="let screenshot of screenshots; let i = index" class="screenshots">
+            <div>
+                <img src="./../../assets/img/{{screenshots[i]}}">
+            </div>
         </div>
     </div>
 </div>

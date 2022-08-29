@@ -1,0 +1,19 @@
+.footer {
+    background-color: white;
+    color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+
+    .imprint {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    img {
+        object-fit: cover;
+        width: 50px;
+        margin-left: 40px;
+        cursor: pointer;
+    }
+}

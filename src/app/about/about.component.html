@@ -1,0 +1,22 @@
+<div class="bg2 padding">
+    <div class="aboutSection">
+        <div class="aboutSection-child">
+            <img src="./../../assets/img/profile.png">
+        </div>
+        <div class="aboutSection-child">
+            <h1>About me</h1>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+    </div>
+
+    <div class="journey">
+        <div *ngFor="let journey of journeys; let i = index" class="journey-child">
+            <div class="journeyImg">
+                <img src="./../../assets/img/{{images[i]}}">
+            </div>
+            <div class="journeyText">
+                <p>{{journeys[i]}}</p>
+            </div>
+        </div>
+    </div>
+</div>

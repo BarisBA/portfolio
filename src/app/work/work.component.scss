@@ -26,13 +26,19 @@
     }
 }
 
-.screenshots {
+.screenshots-header {
     display: flex;
     flex-wrap: wrap;
-    
-    img {
-        object-fit: cover;
-        width: 460px;
-        height: 300px;
+    justify-content: center;
+
+    .screenshots {
+        display: flex;
+        margin: 10px;
+        
+        img {
+            object-fit: cover;
+            width: 460px;
+            height: 300px;
+        }
     }
 }
