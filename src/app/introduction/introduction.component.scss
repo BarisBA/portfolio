@@ -20,15 +20,16 @@
     }
 }
 
-button {
+a {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 70px;
     padding-right: 70px;
-    background-color: black;
     color: rgb(45, 252, 216);
+    border-style: solid;
     border-color: rgb(45, 252, 216);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .arrow {

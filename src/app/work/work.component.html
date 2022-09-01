@@ -1,16 +1,28 @@
 <div class="bg1 padding">
-    <div class="workTitle">
+    <div class="workTitle" id="work">
         <h1>MY work</h1>
         <div class="laguages">
-            <div *ngFor="language of languages;let i = index" class="laguages-child">
-                <p>{{languages[i]}}</p>
-            </div>           
+            <div class="laguages-child">
+                <button (click)="showAllWork()">All</button>
+                <button (click)="showAngularWork()">Angular</button>
+                <button (click)="showJavascriptWork()">Javascript</button>
+            </div>
         </div>
     </div>
-    <div class="screenshots-header">
-        <div *ngFor="let screenshot of screenshots; let i = index" class="screenshots">
-            <div>
-                <img src="./../../assets/img/{{screenshots[i]}}">
+    <ng-container *ngIf="showAll">
+        <div class="screenshots-header">
+            <div *ngFor="let screenshot of screenshotsAll; let i = index" class="screenshots">
+                <div id="workScreenshot">
+                    <img src="./../../assets/img/{{screenshotsAll[i]}}">
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <div *ngIf="showJavascript" class="screenshots-header">
+        <div *ngFor="let screenshot of screenshotsJavascript; let i = index" class="screenshots">
+            <div id="workScreenshot">
+                <img src="./../../assets/img/{{screenshotsJavascript[i]}}">
             </div>
         </div>
     </div>

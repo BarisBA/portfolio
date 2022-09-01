@@ -9,21 +9,27 @@
         display: flex;
         justify-content: center;
 
-        .laguages-child {
+        button {
+            color: white;
             margin-left: 10px;
             margin-right: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             width: 100px;
-            
+            background-color: black;
+            border-color: rgb(250, 39, 89);
+            text-align: center;
+
             &:hover {
                 background-color: rgb(250, 39, 89);
                 cursor: pointer;
             }
         }
-
-        p {
-            text-align: center;
-        }
     }
+}
+
+.backgroundColor {
+    background-color: rgb(250, 39, 89);
 }
 
 .screenshots-header {

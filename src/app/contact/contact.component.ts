@@ -11,5 +11,10 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+/*
+  validateForm() {
+    document.forms['form']['name'].value;
+    document.forms['form']['email'].value;
+    document.forms['form']['message'].value;
+}*/
 }
