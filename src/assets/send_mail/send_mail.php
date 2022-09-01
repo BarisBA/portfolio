@@ -2,8 +2,8 @@
 
 ########### CONFIG ###############
 
-$recipient = 'baris_aslan@gmx.de';
-$redirect = '/portfolio/dist/portfolio/index.html';
+$recipient = 'baris7801@outlook.de';
+$redirect = '/dist/assets/send_mail/success.html';
 
 ########### CONFIG END ###########
 
