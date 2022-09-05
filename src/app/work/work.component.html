@@ -1,28 +1,37 @@
-<div class="bg1 padding">
-    <div class="workTitle" id="work">
-        <h1>MY work</h1>
-        <div class="laguages">
-            <div class="laguages-child">
-                <button (click)="showAllWork()">All</button>
-                <button (click)="showAngularWork()">Angular</button>
-                <button (click)="showJavascriptWork()">Javascript</button>
-            </div>
-        </div>
-    </div>
-    <ng-container *ngIf="showAll">
-        <div class="screenshots-header">
-            <div *ngFor="let screenshot of screenshotsAll; let i = index" class="screenshots">
-                <div id="workScreenshot">
-                    <img src="./../../assets/img/{{screenshotsAll[i]}}">
+<div class="bg1 padding minHeight " id="workSection">
+    <div #work>
+        <div class="workTitle">
+            <h1>MY work</h1>
+            <div *ngIf="showWork" class="laguages fadeIn">
+                <div>
+                    <button (click)="showAllWork()">All</button>
+                    <button (click)="showAngularWork()">Angular</button>
+                    <button (click)="showJavascriptWork()">Javascript</button>
                 </div>
             </div>
         </div>
-    </ng-container>
 
-    <div *ngIf="showJavascript" class="screenshots-header">
-        <div *ngFor="let screenshot of screenshotsJavascript; let i = index" class="screenshots">
-            <div id="workScreenshot">
-                <img src="./../../assets/img/{{screenshotsJavascript[i]}}">
+        <ng-container *ngIf="showAll">
+            <div *ngIf="showWork" class="screenshots-header fadeIn">
+                <div *ngFor="let screenshot of screenshotsAll; let i = index" class="screenshots">
+                    <div class="hoverEvent">
+                        <div (mouseenter)="screenshothover = true;" (mouseleave)="screenshot.hover = false;"
+                            class="hoverEvent-child" id="workScreenshot">
+                            <img src="./../../assets/img/{{screenshotsAll[i]}}">
+                        </div>
+                        <div *ngIf="hover" class="hoverEvent-child stack-top">
+                            {{hoverText[i]}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+
+        <div *ngIf="showJavascript&&showWork" class="screenshots-header fadeIn">
+            <div *ngFor="let screenshot of screenshotsJavascript; let i = index" class="screenshots">
+                <div id="workScreenshot">
+                    <img src="./../../assets/img/{{screenshotsJavascript[i]}}">
+                </div>
             </div>
         </div>
     </div>

@@ -3,6 +3,7 @@
     justify-content: center;
     color: white;
     padding-bottom: 80px;
+    border-bottom: solid 1px rgb(45, 252, 216);
 
     img {
         width: 200px;
@@ -15,13 +16,10 @@
     }
 }
 
-
-
 .journey {
     display: flex;
     justify-content: center;
-    border-top: solid 1px rgb(45, 252, 216);
-
+    
     .journey-child {
         color: white;
         display: flex;
@@ -51,5 +49,12 @@
     p {
         text-align: center;
         font-size: 18px;
+    }
+
+    .journeyText {
+        max-width: 200px;
+         p {
+            margin: 15px;
+         }
     }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HostListener } from '@angular/core';
+import { ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-work',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent implements OnInit {
-  screenshotsAll = ['startscreen_1.png','Join.png','startscreen_1.png','Join.png'];
-  screenshotsJavascript = ['startscreen_1.png','Join.png'];
+  showWork = false;
   showAll = true;
   showJavascript = false;
+  hover = false;
+  @ViewChild('work') divWork!: ElementRef;
+
+  screenshotsAll = ['startscreen_1.png','Join.png','startscreen_1.png','Join.png'];
+  screenshotsJavascript = ['startscreen_1.png','Join.png'];
+  hoverText = ['El Pollo Locco', 'Join','El Pollo Locco', 'Join']
+
   constructor() { }
 
   ngOnInit(): void {
@@ -28,5 +36,15 @@ export class WorkComponent implements OnInit {
   showJavascriptWork() {
     this.showAll = false;
     this.showJavascript = true;
+  }
+
+  @HostListener('document:scroll', ['$event'])
+  public onViewportScroll() {
+    const windowHeight = window.innerHeight;
+    const boundingRectWork = this.divWork.nativeElement.getBoundingClientRect();
+
+    if (boundingRectWork.top >= 0 && boundingRectWork.bottom <= windowHeight) {
+       this.showWork = true;
+    } 
   }
 }

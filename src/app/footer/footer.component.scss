@@ -4,10 +4,21 @@
     display: flex;
     justify-content: space-between;
 
-    .imprint {
+    .footer-child {
         display: flex;
         align-items: center;
         cursor: pointer;
+
+        a {
+            margin-left: 5px;
+            margin-right: 5px;
+            text-decoration: none;
+            color: lightgrey;
+
+            &:hover {
+                color: black;
+            }
+        }
     }
 
     img {

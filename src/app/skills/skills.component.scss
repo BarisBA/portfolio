@@ -1,7 +1,8 @@
 .mySkills {
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    margin-bottom: -30px;
 }
 
 .skillSection-header {
@@ -11,6 +12,7 @@
     flex-wrap: wrap;
     max-width: 600px;
     margin: auto;
+
 
     .skillSection {
         margin-top: 70px;
@@ -33,10 +35,10 @@
         display: flex;
         justify-content: center;
 
-    img {
-        object-fit: cover;
-        width: 30px;
-    }
+        img {
+            object-fit: cover;
+            width: 30px;
+        }
     }
 
     .skillImg-child {

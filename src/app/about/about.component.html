@@ -1,21 +1,23 @@
-<div class="bg2 padding">
+<div class="bg2 padding minHeight">
     <div class="aboutSection" id="about">
         <div class="aboutSection-child">
             <img src="./../../assets/img/profile.png">
         </div>
         <div class="aboutSection-child">
             <h1>About me</h1>
-            <p>Lorem ipsum dolor sit</p>
+            <p>"I am 21 years old and love doing sports and coding."</p>
         </div>
     </div>
 
-    <div class="journey">
-        <div *ngFor="let journey of journeys; let i = index" class="journey-child">
-            <div class="journeyImg">
-                <img src="./../../assets/img/{{images[i]}}">
-            </div>
-            <div class="journeyText">
-                <p>{{journeys[i]}}</p>
+    <div #journey>
+        <div *ngIf="showJourney" class="journey fadeIn">
+            <div *ngFor="let journey of journeys; let i = index" class="journey-child">
+                <div class="journeyImg">
+                    <img src="./../../assets/img/{{images[i]}}">
+                </div>
+                <div class="journeyText">
+                    <p>{{journeys[i]}}</p>
+                </div>
             </div>
         </div>
     </div>

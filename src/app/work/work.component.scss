@@ -28,10 +28,6 @@
     }
 }
 
-.backgroundColor {
-    background-color: rgb(250, 39, 89);
-}
-
 .screenshots-header {
     display: flex;
     flex-wrap: wrap;
@@ -40,11 +36,38 @@
     .screenshots {
         display: flex;
         margin: 10px;
-        
+        color: white;
+
         img {
             object-fit: cover;
-            width: 460px;
-            height: 300px;
+            width: 450px;
+            height: 260px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    #workScreenshot {
+        :hover {
+            opacity: 0.5;
+        }
+    }
+
+    .hoverEvent{
+        width: 450px;
+        height: 260px;
+        position: relative;
+
+        .hoverEvent-child {        
+            position: absolute;
+        }
+        
+        .stack-top{
+            z-index: 10;
+            left: 150px;
+            top: 50%;
         }
     }
 }
