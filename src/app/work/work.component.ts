@@ -16,7 +16,9 @@ export class WorkComponent implements OnInit {
 
   screenshotsAll = ['startscreen_1.png','Join.png','startscreen_1.png','Join.png'];
   screenshotsJavascript = ['startscreen_1.png','Join.png'];
-  hoverText = ['El Pollo Locco', 'Join','El Pollo Locco', 'Join']
+  project = ['el_pollo_locco/index.html','Gruppenarbeit-Join/index.html','el_pollo_locco/index.html','Gruppenarbeit-Join/index.html']; 
+  hoverTextAll = ['A 2D Jump´n Run game created with javascript', 'Kanban Board','El Pollo Locco', 'Join']
+  hoverTextJs = ['A 2D Jump´n Run game created with javascript', 'Kanban Board']
 
   constructor() { }
 
@@ -46,5 +48,9 @@ export class WorkComponent implements OnInit {
     if (boundingRectWork.top >= 0 && boundingRectWork.bottom <= windowHeight) {
        this.showWork = true;
     } 
+  }
+
+  goToLink(url) {
+    window.open(url, "_blank");
   }
 }

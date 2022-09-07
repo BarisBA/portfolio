@@ -43,31 +43,65 @@
             width: 450px;
             height: 260px;
         }
-
-        &:hover {
-            cursor: pointer;
-        }
     }
 
+    /*
     #workScreenshot {
         :hover {
             opacity: 0.5;
         }
     }
-
-    .hoverEvent{
+*/.center {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+    .hoverEvent {
         width: 450px;
         height: 260px;
         position: relative;
 
-        .hoverEvent-child {        
+        .hoverEvent-child {
             position: absolute;
         }
-        
-        .stack-top{
+
+        .stack-top {
             z-index: 10;
-            left: 150px;
-            top: 50%;
+            background-color: rgba(0, 0, 0, 0.5);    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 200px;
+            border-radius: 16px;
+            p {
+                display: flex;
+                justify-content: center;
+                width: 150px;
+            }
+
+            .button {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 45px;
+                    padding-right: 45px;
+                    border-radius: 8px;
+                    border: none;
+                    background-color: rgb(250, 39, 89);
+                    color: white;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }
+                }
+            }
+
         }
     }
 }
