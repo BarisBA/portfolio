@@ -11,7 +11,7 @@ export class WorkComponent implements OnInit {
   showWork = false;
   showAll = true;
   showJavascript = false;
-  hover = false;
+  hover = {};
   @ViewChild('work') divWork!: ElementRef;
 
   screenshotsAll = ['startscreen_1.png','Join.png','startscreen_1.png','Join.png'];
