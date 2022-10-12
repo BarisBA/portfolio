@@ -11,14 +11,19 @@ export class WorkComponent implements OnInit {
   showWork = false;
   showAll = true;
   showJavascript = false;
+  showAngular = false;
   hover = {};
   @ViewChild('work') divWork!: ElementRef;
 
-  screenshotsAll = ['startscreen_1.png','Join.png','startscreen_1.png','Join.png'];
-  screenshotsJavascript = ['startscreen_1.png','Join.png'];
-  hoverTextAll = ['A 2D Jump´n Run game created with javascript', 'Kanban Board','El Pollo Locco', 'Join']
-  hoverTextJs = ['A 2D Jump´n Run game created with javascript', 'Kanban Board']
-  project = ['el_pollo_locco/index.html','Gruppenarbeit-Join/index.html','el_pollo_locco/index.html','Gruppenarbeit-Join/index.html']; 
+  screenshotsAll = ['elpollolocco.png','Join.png','portfolioPic.png','ringoffire.jpg'];
+  screenshotsJavascript = ['elpollolocco.png','Join.png'];
+  screenshotsAngular = ['portfolioPic.png','ringoffire.jpg'];
+
+  hoverTextAll = ['A 2D Jump´n Run game created with javascript', 'Kanban Board','This portfolio was created with Angular', 'Ring of Fire game created with Angular'];
+  hoverTextJs = ['A 2D Jump´n Run game created with javascript', 'Kanban Board'];
+  hoverTextAngular = ['This portfolio was created with Angular', 'Ring of Fire game created with Angular'];
+
+  project = ['el_pollo_locco/index.html','Gruppenarbeit-Join/index.html','portfolio/index.html','ringoffire/index.html']; 
   
   constructor() { }
 
@@ -29,14 +34,18 @@ export class WorkComponent implements OnInit {
   showAllWork() {
     this.showAll = true;
     this.showJavascript = false;
+    this.showAngular = false;
   }
 
   showAngularWork() {
-
+    this.showAll = false;
+    this.showJavascript = false;
+    this.showAngular = true;
   }
 
   showJavascriptWork() {
     this.showAll = false;
+    this.showAngular = false;
     this.showJavascript = true;
   }
 

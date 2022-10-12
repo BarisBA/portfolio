@@ -16,7 +16,7 @@
                 <div *ngFor="let screenshot of screenshotsAll; let i = index" class="screenshots">
                     <div class="hoverEvent" (mouseenter)="hover[i] = true;" (mouseleave)="hover[i] = false;">
                         <div class="hoverEvent-child" id="workScreenshot">
-                            <img src="./../../assets/img/{{screenshotsAll[i]}}">
+                            <img src="assets/img/{{screenshotsAll[i]}}">
                         </div>
                         <div class=" center">
                             <div *ngIf="hover[i]" class="hoverEvent-child stack-top">
@@ -35,16 +35,38 @@
             </div>
         </ng-container>
 
-        <div *ngIf="showJavascript&&showWork" class="screenshots-header fadeIn">
-            <div *ngFor="let screenshot of screenshotsJavascript; let i = index" class="screenshots">
+        <div *ngIf="showAngular&&showWork" class="screenshots-header fadeIn">
+            <div *ngFor="let screenshot of screenshotsAngular; let i = index" class="screenshots">
                 <div class="hoverEvent" (mouseenter)="hover[i] = true;" (mouseleave)="hover[i] = false;">
                     <div class="hoverEvent-child" id="workScreenshot">
-                        <img src="./../../assets/img/{{screenshotsJavascript[i]}}">
+                        <img src="assets/img/{{screenshotsAngular[i]}}">
                     </div>
                     <div class=" center">
                         <div *ngIf="hover[i]" class="hoverEvent-child stack-top">
                             <div>
-                                <p>{{hoverTextAll[i]}} </p>
+                                <p>{{hoverTextAngular[i]}} </p>
+                            </div>
+                            <div class="button">
+                                <button (click)="goToLink(i)">
+                                    Try it!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="showJavascript&&showWork" class="screenshots-header fadeIn">
+            <div *ngFor="let screenshot of screenshotsJavascript; let i = index" class="screenshots">
+                <div class="hoverEvent" (mouseenter)="hover[i] = true;" (mouseleave)="hover[i] = false;">
+                    <div class="hoverEvent-child" id="workScreenshot">
+                        <img src="assets/img/{{screenshotsJavascript[i]}}">
+                    </div>
+                    <div class=" center">
+                        <div *ngIf="hover[i]" class="hoverEvent-child stack-top">
+                            <div>
+                                <p>{{hoverTextJs[i]}} </p>
                             </div>
                             <div class="button">
                                 <button (click)="goToLink(i)">
