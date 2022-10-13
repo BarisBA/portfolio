@@ -12,10 +12,10 @@ export class AboutComponent implements OnInit {
   @ViewChild('journey') divJourney!: ElementRef;
 
   journeys = [
-    'My journey began at school where i first came in contact with informatics.',
-    'At some point after school i missed my informatics courses and realised that is my passion and what i want to do in my future',
+    'My journey began at school where I first came in contact with programming.',
+    'At some point after school I missed my informatics course and realised that is what I love doing',
     'I was looking for a way to learn web development and came a cross with the Developer Akademie.',
-    'In the future i want to use everything what i learned as a frontend developer and at some point i like to learn program big games'
+    'In the future I want to use everything what I learned as a frontend developer and at some point i like to learn program bigger games'
 ];
   images = ['walk-line.png','heart-line.png','search-line.png','flight-takeoff-line.png'];
   constructor() { }
