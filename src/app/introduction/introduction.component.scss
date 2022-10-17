@@ -3,9 +3,9 @@
     display: flex;
     justify-content: space-between;
 
-        p {
-            font-size: 70px;
-        }
+    p {
+        font-size: 70px;
+    }
 
     .introductionImg {
         display: flex;
@@ -25,25 +25,182 @@ a {
     padding-bottom: 20px;
     padding-left: 70px;
     padding-right: 70px;
-    color: rgb(45, 252, 216);
+    color: #2DFCD8;
     border-style: solid;
-    border-color: rgb(45, 252, 216);
+    border-color: #2DFCD8;
     cursor: pointer;
     text-decoration: none;
 
     &:hover {
-        background-color: rgb(45, 252, 216);
+        background-color: #2DFCD8;
         color: black;
     }
 }
 
-.arrow {
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
+@media (max-width: 1150px) {
+    .introduction {
+        p {
+            font-size: 50px;
+        }
 
-    img {
-        width: 44px;
-        object-fit: cover;
+        img {
+            width: 280px;
+            height: 280px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .introduction {
+        p {
+            font-size: 40px;
+        }
+
+        img {
+            width: 260px;
+            height: 260px;
+        }
+    }
+}
+
+@media (max-width: 865px) {
+    .introduction {
+        p {
+            font-size: 35px;
+        }
+
+        img {
+            width: 245px;
+            height: 245px;
+        }
+    }
+}
+
+@media (max-width: 790px) {
+    .introduction {
+        p {
+            font-size: 30px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .introduction {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 46px;
+        }
+
+        img {
+            width: 190px;
+            height: 190px;
+        }
+    }
+
+    .aContainer {
+        display: flex;
+        justify-content: center;
+
+        a {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .introduction {
+        p {
+            font-size: 47px;
+        }
+
+        img {
+            width: 180px;
+            height: 180px;
+        }
+    }
+
+    .aContainer {
+        a {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .introduction {
+        p {
+            font-size: 43px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .introduction {
+        p {
+            font-size: 37px;
+        }
+
+        img {
+            width: 170px;
+            height: 170px;
+        }
+    }
+
+    .aContainer {
+        a {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 110px;
+            padding-right: 110px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .introduction {
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .aContainer {
+        a {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 85px;
+            padding-right: 85px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .introduction {
+        p {
+            font-size: 27px;
+        }
+    }
+
+    .aContainer {
+        a {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 75px;
+            padding-right: 75px;
+        }
     }
 }

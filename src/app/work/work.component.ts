@@ -23,9 +23,9 @@ export class WorkComponent implements OnInit {
   hoverTextJs = ['A 2D Jump´n Run game created with javascript', 'Kanban Board'];
   hoverTextAngular = ['This portfolio was created with Angular', 'Ring of Fire game created with Angular'];
 
-  allProjects = ['el_pollo_locco', 'Gruppenarbeit-Join', 'portfolio', 'ringoffire'];
+  allProjects = ['el_pollo_locco', 'join', 'portfolio', 'ringoffire'];
   angularProjects = ['portfolio', 'ringoffire'];
-  jsProjects = ['el_pollo_locco', 'Gruppenarbeit-Join'];
+  jsProjects = ['el_pollo_locco', 'join'];
 
   constructor() { }
 

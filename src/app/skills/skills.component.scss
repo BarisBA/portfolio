@@ -1,7 +1,7 @@
 .mySkills {
     color: white;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     margin-bottom: -30px;
 }
 
@@ -50,6 +50,86 @@
         height: 60px;
         border-radius: 50%;
         background-color: white;
-        box-shadow: 0px 0px 0px 0.5px;
+        box-shadow: 2px 2px 2px ;
+    }
+}
+
+@media (max-width: 550px) {
+    .skillSection-header {
+        .skillSection {
+            width: 120px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-top: 40px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .skillImg {
+            img {
+                width: 25px;
+            }
+        }
+
+        .skillImg-child {
+            margin-top: -45px;
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .skillSection-header {
+        .skillSection {
+            width: 105px;
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .skillSection-header {
+        .skillSection {
+            width: 95px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 11px;
+        }
+
+        .skillImg {
+            img {
+                width: 20px;
+            }
+        }
+
+        .skillImg-child {
+            margin-top: -25px;
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+@media (max-width: 355px) {
+    .skillSection-header {
+        .skillSection {
+            width: 90px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 11px;
+        }
+
+        .skillImg {
+            img {
+                width: 20px;
+            }
+        }
+
+        .skillImg-child {
+            margin-top: -25px;
+            width: 35px;
+            height: 35px;
+        }
     }
 }

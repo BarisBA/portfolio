@@ -6,7 +6,8 @@
 
     .footer-child {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         cursor: pointer;
 
         a {
@@ -26,5 +27,66 @@
         width: 50px;
         margin-left: 40px;
         cursor: pointer;
+    }
+}
+
+@media (max-width: 775px) {
+    .footer {
+        .footer-child {
+            a {
+                font-size: 14px;
+            }
+        }
+
+        img {
+            width: 35px;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .footer-child {
+            a {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 470px) {
+    .footer {
+        img {
+            width: 30px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .footer {
+        .footer-child {
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .footer {
+        .footer-child {
+            a {
+                font-size: 11px;
+            }
+        }
+
+        img {
+            width: 25px;
+        }
     }
 }

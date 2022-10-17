@@ -1,9 +1,14 @@
 <div class="footer margin padding">
     <div class="footer-child">
-        <a routerLink="/imprint">Imprint</a> - <a routerLink="/data-protection">Data protection</a>
+        <div><a routerLink="/imprint">Imprint</a> - <a routerLink="/data-protection">Data protection</a></div>
+        <div><a (click)="goToLink('https://logomakr.com/app/4gVFFM#')">Created my logo at LogoMakr.com/app</a></div>
+        <div><a (click)="goToLink('https://remixicon.com/')">Icons from remixicon.com</a></div>
+        <div><a (click)="goToLink('https://worldvectorlogo.com/de/downloaded/scrumorg-1/')">Scrum Icon from worldvectorlogo.com</a></div>
+        <div><a (click)="goToLink('https://worldvectorlogo.com/de/downloaded/angular-icon-1')">Angular Icon from worldvectorlogo.com</a></div>
     </div>
     <div>
-        <a (click)="goToLink('https://www.linkedin.com/in/baris-aslan-4a088224a')"><img src="assets/img/linkedin-box-fill.png"></a>
+        <a (click)="goToLink('https://www.linkedin.com/in/baris-aslan-4a088224a')"><img
+                src="assets/img/linkedin-box-fill.png"></a>
         <a (click)="goToLink('https://github.com/BarisBA')"><img src="assets/img/github-fill.png"></a>
         <a (click)="goToLink('https://www.xing.com/profile/Baris_Aslan27/cv')"><img src="assets/img/xing-fill.png"></a>
     </div>

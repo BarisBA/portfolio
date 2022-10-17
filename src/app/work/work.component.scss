@@ -17,11 +17,11 @@
             padding-bottom: 20px;
             width: 100px;
             background-color: black;
-            border-color: rgb(250, 39, 89);
+            border-color: #FA2759;
             text-align: center;
 
             &:hover {
-                background-color: rgb(250, 39, 89);
+                background-color: #FA2759;
                 cursor: pointer;
             }
         }
@@ -32,6 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1000px;
 
     .screenshots {
         display: flex;
@@ -45,17 +46,12 @@
         }
     }
 
-    /*
-    #workScreenshot {
-        :hover {
-            opacity: 0.5;
-        }
+    .stackCenter {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
     }
-*/.center {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-}
+
     .hoverEvent {
         width: 450px;
         height: 260px;
@@ -67,7 +63,7 @@
 
         .stack-top {
             z-index: 10;
-            background-color: rgba(0, 0, 0, 0.5);    
+            background-color: rgba(0, 0, 0, 0.5);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -75,9 +71,8 @@
             width: 250px;
             height: 200px;
             border-radius: 16px;
+
             p {
-                display: flex;
-                justify-content: center;
                 width: 150px;
             }
 
@@ -92,7 +87,7 @@
                     padding-right: 45px;
                     border-radius: 8px;
                     border: none;
-                    background-color: rgb(250, 39, 89);
+                    background-color: #FA2759;
                     color: white;
 
                     &:hover {
@@ -102,6 +97,137 @@
                 }
             }
 
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .screenshots-header {
+        max-width: none;
+    }
+}
+
+@media (max-width: 490px) {
+    .screenshots-header {
+        .screenshots {
+            img {
+                width: 400px;
+                height: 210px;
+            }
+        }
+
+        .hoverEvent {
+            width: 400px;
+            height: 210px;
+
+            .stack-top {
+                width: 250px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .screenshots-header {
+        .screenshots {
+            img {
+                width: 370px;
+                height: 180px;
+            }
+        }
+
+        .hoverEvent {
+            width: 370px;
+            height: 180px;
+
+            .stack-top {
+                width: 230px;
+                height: 140px;
+            }
+        }
+    }
+}
+
+@media (max-width: 405px) {
+    .screenshots-header {
+        .screenshots {
+            img {
+                width: 335px;
+                height: 145px;
+            }
+        }
+
+        .hoverEvent {
+            width: 335px;
+            height: 145px;
+
+            .stack-top {
+                width: 210px;
+                height: 100px;
+
+                p {
+                    font-size: 13px;
+                }
+
+                .button {
+                    button {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        font-size: 13px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .screenshots-header {
+        .screenshots {
+            img {
+                width: 310px;
+                height: 150px;
+            }
+        }
+
+        .hoverEvent {
+            width: 315px;
+            height: 150px;
+
+            .stack-top {
+                width: 185px;
+                height: 75px;
+
+                .button {
+                    button {
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        padding-left: 23px;
+                        padding-right: 23px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .workTitle {
+        h1 {
+            font-size: 47px;
+        }
+        
+        .laguages {
+            button {
+                margin: 5px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                width: 80px;
+                font-size: 12px;
+            }
         }
     }
 }

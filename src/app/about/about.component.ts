@@ -13,9 +13,9 @@ export class AboutComponent implements OnInit {
 
   journeys = [
     'My journey began at school where I first came in contact with programming.',
-    'At some point after school I missed my informatics course and realised that is what I love doing',
-    'I was looking for a way to learn web development and came a cross with the Developer Akademie.',
-    'In the future I want to use everything what I learned as a frontend developer and at some point i like to learn program bigger games'
+    'At some point, after school I missed my informatics course and realized that is what I love doing',
+    'I was looking for a way to expand my skills in web development and decided to take a professional training course at the Developer Akademie.',
+    'My heart beats for game programming, which I would like to dedicate my future to as a professional web developer.'
 ];
   images = ['walk-line.png','heart-line.png','search-line.png','flight-takeoff-line.png'];
   constructor() { }
