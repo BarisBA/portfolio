@@ -1,20 +1,23 @@
 <div class="bg1 padding minHeight center" id="contact">
-    <div class="contact-header">
-        <div class="contactInput">
-            <h1>Contact me.</h1>
-            <p class="getInTouchP">Get in touch via form below, or by emailing baris7801@hotmail.de</p>
-            <div #contactForm>
-                <div *ngIf="showForm" class="fadeIn">
-                    <form action="https://baris-aslan.developerakademie.net/portfolio/assets/send_mail/send_mail.php"
-                        method="POST">
-                        <p>Name</p>
-                        <input required type="text" name="name" placeholder="Enter your name">
-                        <p>Email address</p>
-                        <input required type="email" name="email" placeholder="Enter your Email address">
-                        <p>Messsage</p>
-                        <textarea required name="message" placeholder="Enter your message"></textarea>
-                        <button type="submit">Send</button>
-                    </form>
+    <div #contactForm>
+        <div *ngIf="showForm" class="contact-header">
+            <div class="contactInput fadeIn">
+                <h1>Contact me.</h1>
+                <p class="getInTouchP">Get in touch via form below, or by emailing baris7801@hotmail.de</p>
+                <div>
+                    <div class="fadeIn">
+                        <form
+                            action="https://baris-aslan.de/portfolio/assets/send_mail/send_mail.php"
+                            method="POST">
+                            <p>Name</p>
+                            <input required type="text" name="name" placeholder="Enter your name">
+                            <p>Email address</p>
+                            <input required type="email" name="email" placeholder="Enter your Email address">
+                            <p>Messsage</p>
+                            <textarea required name="message" placeholder="Enter your message"></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

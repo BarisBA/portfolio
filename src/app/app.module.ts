@@ -13,6 +13,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { WrapperComponent } from './wrapper/wrapper.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { CommonModule } from '@angular/common';
+import { SendMailComponent } from './send-mail/send-mail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CommonModule } from '@angular/common';
     FooterComponent,
     ImprintComponent,
     WrapperComponent,
-    DataProtectionComponent
+    DataProtectionComponent,
+    SendMailComponent
   ],
   imports: [
     BrowserModule,

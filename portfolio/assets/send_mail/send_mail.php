@@ -3,7 +3,7 @@
 ########### CONFIG ###############
 
 $recipient = 'baris7801@hotmail.de';
-$redirect = '/portfolio/index.html';
+$redirect = 'success.html';
 
 ########### CONFIG END ###########
 

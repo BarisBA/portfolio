@@ -62,14 +62,14 @@ export class WorkComponent implements OnInit {
   }
 
   goToLinkAtAllProjects(index) {
-    window.open(`https://baris-aslan.developerakademie.net/${this.allProjects[index]}`, "_blank");
+    window.open(`https://baris-aslan.de/${this.allProjects[index]}`, "_blank");
   }
 
   goToLinkAtAngular(index) {
-    window.open(`https://baris-aslan.developerakademie.net/${this.angularProjects[index]}`, "_blank");
+    window.open(`https://baris-aslan.de/${this.angularProjects[index]}`, "_blank");
   }
 
   goToLinkAtJs(index) {
-    window.open(`https://baris-aslan.developerakademie.net/${this.jsProjects[index]}`, "_blank");
+    window.open(`https://baris-aslan.de/${this.jsProjects[index]}`, "_blank");
   }
 }

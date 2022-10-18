@@ -188,6 +188,10 @@
 @media (max-width: 375px) {
     .screenshots-header {
         .screenshots {
+            margin: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
             img {
                 width: 310px;
                 height: 150px;
@@ -219,7 +223,7 @@
         h1 {
             font-size: 47px;
         }
-        
+
         .laguages {
             button {
                 margin: 5px;

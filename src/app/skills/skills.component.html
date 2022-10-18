@@ -1,17 +1,19 @@
 <div class="bg2 padding minHeight center">
-    <div class="mySkills">
-        <h1> MY Skills</h1>
-    </div>
-
     <div #skills>
-        <div *ngIf="showSkills" class="skillSection-header">
-            <div *ngFor="let image of images; let i = index" class="skillSection fadeIn" id="skills">
-                <div class="skillImg">
-                    <div class="skillImg-child">
-                        <img src="assets/img/{{images[i]}}">
+        <div *ngIf="showSkills" class="mySkills fadeIn">
+            <h1> MY Skills</h1>
+        </div>
+
+        <div>
+            <div *ngIf="showSkills" class="skillSection-header">
+                <div *ngFor="let image of images; let i = index" class="skillSection fadeIn" id="skills">
+                    <div class="skillImg">
+                        <div class="skillImg-child">
+                            <img src="assets/img/{{images[i]}}">
+                        </div>
                     </div>
+                    <p>{{skillLanguages[i]}}</p>
                 </div>
-                <p>{{skillLanguages[i]}}</p>
             </div>
         </div>
     </div>
