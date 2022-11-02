@@ -14,6 +14,8 @@ import { WrapperComponent } from './wrapper/wrapper.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { CommonModule } from '@angular/common';
 import { SendMailComponent } from './send-mail/send-mail.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { SendMailComponent } from './send-mail/send-mail.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
