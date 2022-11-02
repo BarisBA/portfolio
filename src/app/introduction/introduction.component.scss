@@ -171,6 +171,22 @@ a {
     }
 }
 
+@media (max-width: 550px) {
+    .introduction {
+        p {
+            font-size: 34px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .introduction {
+        p {
+            font-size: 33px;
+        }
+    }
+}
+
 @media (max-width: 425px) {
     .introduction {
         p {
@@ -188,10 +204,10 @@ a {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 370px) {
     .introduction {
         p {
-            font-size: 27px;
+            font-size: 26px;
         }
     }
 
