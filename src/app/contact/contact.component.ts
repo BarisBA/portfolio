@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HostListener } from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { SendMailComponent } from '../send-mail/send-mail.component';
 
 @Component({
@@ -18,7 +19,7 @@ export class ContactComponent implements OnInit {
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit(): void {
   }
@@ -49,6 +50,8 @@ export class ContactComponent implements OnInit {
     mailField.disabled = false;
     messageField.disabled = false;
     sendButton.disabled = false;
+
+    this._router.navigateByUrl('/send-mail')
   }
 
   @HostListener('document:scroll', ['$event'])
