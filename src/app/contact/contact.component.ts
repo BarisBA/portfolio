@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HostListener } from '@angular/core';
 import { ElementRef, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { SendMailComponent } from '../send-mail/send-mail.component';
 
 @Component({
@@ -22,8 +23,7 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  async sendMail() {
-    //action="https://baris-aslan.de/portfolio/assets/send_mail/send_mail.php"
+  async sendMail(myForm: NgForm) {
     let nameField = this.nameField.nativeElement;
     let mailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
@@ -53,7 +53,7 @@ export class ContactComponent implements OnInit {
 
   @HostListener('document:scroll', ['$event'])
   public onViewportScroll() {
-    //  Captures / defines current window height when called
+    //  Captures / defines current window height when called                           routerLink="/send-mail"
     const windowHeight = window.innerHeight;
     //  Captures bounding rectangle of the div #skills
     const boundingRectContactForm = this.divContactForm.nativeElement.getBoundingClientRect();
