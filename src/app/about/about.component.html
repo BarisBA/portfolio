@@ -1,4 +1,4 @@
-<div class="bg2 padding minHeight center" id="about">
+<div class="bg2 center" id="about">
     <div #journey>
         <div *ngIf="showJourney" class="aboutSection fadeIn">
             <div class="aboutSection-child">
@@ -7,19 +7,6 @@
             <div class="aboutSection-child">
                 <h1>About me.</h1>
                 <p>"I am 21 years old, a passionate Developer, and a sports enthusiast."</p>
-            </div>
-        </div>
-
-        <div>
-            <div *ngIf="showJourney" class="journey fadeIn">
-                <div *ngFor="let journey of journeys; let i = index" class="journey-child">
-                    <div class="journeyImg">
-                        <img src="assets/img/{{images[i]}}">
-                    </div>
-                    <div class="journeyText">
-                        <p>{{journeys[i]}}</p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

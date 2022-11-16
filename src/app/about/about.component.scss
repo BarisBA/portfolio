@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     color: white;
-    padding-bottom: 80px;
-    border-bottom: solid 1px #2DFCD8;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     img {
         width: 250px;
@@ -15,7 +15,7 @@
         margin-right: 80px;
     }
 }
-
+/*
 .journey {
     display: flex;
     justify-content: center;
@@ -54,8 +54,7 @@
     .journeyText {
         max-width: 200px;
     }
-}
-
+}*/
 @media (max-width: 950px) {
     .journey {
         p {
